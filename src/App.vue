@@ -22,7 +22,7 @@
       <img src="https://img.icons8.com/bubbles/50/000000/restaurant.png"/>
       <div >
         <span class=" title">Good</span>
-        <span class="headline orange--text accent-4" color="#F06C4E">Food</span>
+        <span class="headline title-color"><strong>Food</strong></span>
       </div>
 
       <v-spacer></v-spacer>
@@ -82,3 +82,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.title-color {
+    color: #F06C4E;
+}
+</style>

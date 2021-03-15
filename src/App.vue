@@ -22,7 +22,7 @@
       <img src="https://img.icons8.com/bubbles/50/000000/restaurant.png"/>
       <div >
         <span class=" title">Good</span>
-        <span class="headline title-color"><strong>Food</strong></span>
+        <span class="headline clr-primary "><strong>Food</strong></span>
       </div>
 
       <v-spacer></v-spacer>
@@ -37,7 +37,7 @@
       {{ item.title }}
       </v-btn>
 
-      <v-btn depressed small class="white--text rounded-lg hidden-xs-only mx-1 " color="#F06C4E">
+      <v-btn depressed small class="white--text rounded-lg hidden-xs-only mx-1 " color="#FE5634">
         <v-icon class="py-2">mdi-cart-minus</v-icon>
       </v-btn>
       <v-btn
@@ -47,18 +47,19 @@
       >
       Login
       </v-btn>
-      <v-btn depressed small to="/create-account" class="text-capitalize white--text mr-2 pa-2 btn-style rounded-lg hidden-xs-only" color="#F06C4E">Create Account</v-btn>
+      <v-btn depressed small to="/create-account" class="text-capitalize white--text mr-2 pa-2 btn-style rounded-lg hidden-xs-only" color="#FE5634">Create Account</v-btn>
 
     </v-toolbar>
-
-      <router-view></router-view>
+      <Home/>
+      <Menue/>
     </v-main>
   </v-app>
   </v-container>
 </template>
 
 <script>
-
+import Home from './components/Home'
+import Menue from './components/Menue'
 export default {
   name: 'App',
 
@@ -79,12 +80,14 @@ export default {
     }
   },
   components: {
+    Home,
+    Menue
   }
 }
 </script>
 
 <style>
-.title-color {
-    color: #F06C4E;
+.clr-primary {
+    color: #FE5634 !important;
 }
 </style>

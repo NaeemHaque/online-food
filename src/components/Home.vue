@@ -6,20 +6,20 @@
                 </div>
                  <div class="mx-5 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing.<br> Dolorem quasi quas reprehenderit, dicta quae ad? <br> Error minima quaerat odit. Sequi.</div>
 
-                        <v-row class="mt-2">
-                            <v-col>
+                        <v-row class="mt-2" cols="5">
+                            <v-col cols="4">
                                 <v-text-field
-                                    append-icon="mdi-microphone"
+                                    append-icon="mdi-crosshairs-gps"
                                     class="ml-4"
                                     flat
-                                    label="Search"
+                                    label="Search Your Location"
                                     prepend-inner-icon="mdi-magnify"
                                     solo-inverted
                                     background-color="white"
                                 ></v-text-field>
                             </v-col>
                            <v-col>
-                               <v-btn depressed large class="text-capitalize white--text mt-1" color="#F06C4E">Search</v-btn>
+                               <v-btn depressed large class="text-capitalize white--text mt-1" color="#FE5634">Search</v-btn>
                             </v-col>
                         </v-row>
                  <div class="" style="width: 300px">

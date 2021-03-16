@@ -52,6 +52,7 @@
     </v-toolbar>
       <Home/>
       <Menue/>
+      <About/>
     </v-main>
   </v-app>
   </v-container>
@@ -60,6 +61,7 @@
 <script>
 import Home from './components/Home'
 import Menue from './components/Menue'
+import About from './components/About'
 export default {
   name: 'App',
 
@@ -81,7 +83,8 @@ export default {
   },
   components: {
     Home,
-    Menue
+    Menue,
+    About
   }
 }
 </script>

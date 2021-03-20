@@ -8,7 +8,7 @@
         <v-list-item v-for="item in menuItems" :key="item.title" :to="item.link">
           <v-list-item-content>{{ item.title }}</v-list-item-content>
         </v-list-item>
-        <v-list-item to="/signin">Login</v-list-item>
+        <v-list-item to="/login">Login</v-list-item>
         <v-list-item to="/signup">Signup</v-list-item>
 
       </v-list>
@@ -44,12 +44,14 @@
       depressed color="white"
       class="text-capitalize hidden-xs-only text-center mx-1"
       active-class="green--text"
+      to="/login"
       >
       Login
       </v-btn>
       <v-btn depressed small to="/create-account" class="text-capitalize white--text mr-2 pa-2 btn-style rounded-lg hidden-xs-only" color="#FE5634">Create Account</v-btn>
 
     </v-toolbar>
+    <router-view></router-view>
       <Home/>
       <Menue/>
       <About/>

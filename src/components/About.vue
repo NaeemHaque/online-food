@@ -7,11 +7,11 @@
                     <v-card-title>Fresh Food</v-card-title>
                     <v-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laboriosam!</v-card-text>
                 </v-card>
-                <v-card flat width="300" class="mx-9 my-3 pa-3 sheet-div">
+                <v-card flat hover width="300" class="mx-9 my-3 pa-3 sheet-div">
                     <v-card-title>Fast Delivery</v-card-title>
                     <v-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laboriosam!</v-card-text>
                 </v-card>
-                <v-card flat width="300" class="mx-9 my-2 pa-3 sheet-div">
+                <v-card flat hover width="300" class="mx-9 my-2 pa-3 sheet-div">
                     <v-card-title>Quality Maintain</v-card-title>
                     <v-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laboriosam!</v-card-text>
                 </v-card>
@@ -27,5 +27,8 @@
 .sheet-div {
     background-color: #cfdde6 !important;
     opacity: 0.8;
+}
+.sheet-div:hover {
+    background:  #fff !important;
 }
 </style>

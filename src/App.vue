@@ -9,7 +9,7 @@
           <v-list-item-content>{{ item.title }}</v-list-item-content>
         </v-list-item>
         <v-list-item to="/login">Login</v-list-item>
-        <v-list-item to="/signup">Signup</v-list-item>
+        <v-list-item to="/create">Create Account</v-list-item>
 
       </v-list>
     </v-navigation-drawer>
@@ -33,6 +33,7 @@
       active-class="green--text"
       v-for="item in menuItems" :key="item.title"
       :to="item.link"
+      @click="scrollingToRightPlace(id)"
       >
       {{ item.title }}
       </v-btn>
@@ -48,13 +49,18 @@
       >
       Login
       </v-btn>
-      <v-btn depressed small to="/create-account" class="text-capitalize white--text mr-2 pa-2 btn-style rounded-lg hidden-xs-only" color="#FE5634">Create Account</v-btn>
+      <v-btn depressed small to="/create" class="text-capitalize white--text mr-2 pa-2 btn-style rounded-lg hidden-xs-only" color="#FE5634">Create Account</v-btn>
 
     </v-toolbar>
-    <router-view></router-view>
+    <router-view>
+      <router-link/>
+    </router-view>
       <Home/>
       <Menue/>
+      <Galery/>
+      <GetApp/>
       <About/>
+      <Footer/>
     </v-main>
   </v-app>
   </v-container>
@@ -64,18 +70,23 @@
 import Home from './components/Home'
 import Menue from './components/Menue'
 import About from './components/About'
+import Footer from './components/Footer'
+import GetApp from './components/Get-the-app'
+import Galery from './components/Gallery'
+
 export default {
   name: 'App',
 
   data: () => ({
     sideNav: false
   }),
+
   computed: {
     menuItems () {
       var menuItems = [
         { title: 'Home', link: '/' },
         { title: 'Menue', link: '/menue' },
-        { title: 'Service', link: '/aservice' },
+        { title: 'Service', link: '/service' },
         { title: 'About Us', link: '/about' },
         { title: 'Gelery', link: '/gelery' }
 
@@ -86,7 +97,10 @@ export default {
   components: {
     Home,
     Menue,
-    About
+    GetApp,
+    About,
+    Galery,
+    Footer
   }
 }
 </script>

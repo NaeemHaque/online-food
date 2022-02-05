@@ -9,7 +9,7 @@
                 <v-icon class="bg-primary white--text rounded-lg">mdi-chevron-right</v-icon>
             </v-row>
             <v-row class="my-8">
-                <v-col cols="2" justify="space-around" v-for="(item) in menue " :key="item.title">
+                <v-col cols="12" lg="2" md="2" sm="4" justify="space-around" v-for="(item) in menue " :key="item.title">
                     <template>
                         <v-card flat color="#D9E5EC" height="200" class="card-body rounded-lg">
                           <v-img fab class="rounded-circle ">
@@ -27,16 +27,16 @@
             <v-row class="mt-16">
               <div> <h2><strong>Our New Hottest Dish</strong></h2> </div>
               <div class="mx-auto dish-btn">
-                <v-btn depressed width="120" color="#D9E5EC" class="text-capitalize card-body mx-2 rounded-t-xl pa-3" active-class="bg-primary">Breakfast</v-btn>
-                <v-btn depressed width="120" color="#D9E5EC" class="text-capitalize card-body mx-2 rounded-t-xl pa-3" active-class="bg-primary">Launch</v-btn>
-                <v-btn depressed width="120" color="#D9E5EC" class="text-capitalize card-body mx-2 rounded-t-xl pa-3" active-class="bg-primary">Dinner</v-btn>
+                <v-btn depressed width="120" color="#D9E5EC" class="text-capitalize card-body mx-2 rounded-t-xl pa-3 ma-2" active-class="bg-primary">Breakfast</v-btn>
+                <v-btn depressed width="120" color="#D9E5EC" class="text-capitalize card-body mx-2 rounded-t-xl pa-3 ma-2" active-class="bg-primary">Launch</v-btn>
+                <v-btn depressed width="120" color="#D9E5EC" class="text-capitalize card-body mx-2 rounded-t-xl pa-3 ma-2" active-class="bg-primary">Dinner</v-btn>
               </div>
               <div><v-icon class="rounded-lg">mdi-chevron-left</v-icon>
                 <v-icon class="bg-primary white--text rounded-lg">mdi-chevron-right</v-icon></div>
             </v-row>
 
             <v-row class="my-8">
-                <v-col cols="3" justify="space-around" v-for="item in dish" :key="item.title">
+                <v-col lg="3" md="6" sm="12" justify="space-around" v-for="item in dish" :key="item.title">
                     <template>
                         <v-card flat outlined  color="#D9E5EC" class="card-body rounded-xl">
                           <v-img fab height="auto" width="auto" class=" mt-3 rounded-circle">
